@@ -1,4 +1,9 @@
 /*=====================================Layout==========================================*/
+/*Barra de Navegação*/
+html, body, .capa{
+	height:100%;
+}
+
 .img-logo{
 	height: 40px;
 	width: 132px;
@@ -32,6 +37,115 @@ color: white;
 	color: #2edcf0;
 }
 
+/*Imagens de Fundo*/
+body {
+	background: url('./imagens/capa.png'),
+				url('./imagens/ruido.png'),
+				linear-gradient(50deg,#ff4169,#7c26f8);
+	background-attachment: fixed;
+	font-family: Helvetica,Arial,sans-serif;
+	overflow-x: hidden;
+}
+.capa{				
+	display: table;			
+	width: 100%;	
+}
+.descricao{
+	text-align: center;
+	display: table-cell;
+	vertical-align:middle;
+}
+.btn-custom{
+	color: white;
+	border-radius: 500px;
+		-webkit-border-radius: 500px;
+		-moz-border-radius: 500px;
+	padding: 10px 35px;
+	margin: 0 20px;
+	text-transform: uppercase;
+	transition: background 0.4s, color 0.4s;
+	
+}
+.btn-custom1{
+	background: #6900ffcc;
+}.btn-custom1:hover{
+	color: white;
+	background: #5a0acc;
+}
 
 
-/*=====================================Tipografia========================================*/
+.btn-custom2{
+	background: transparent;
+	border: 2px solid white;	
+}.btn-custom2:hover{
+	background: white;
+	color: black;
+}
+
+/*CONTEÚDO*/
+.servicos{
+	background: white;
+	padding: 20px 0;
+}
+.img{
+	border: 1px solid red;	
+	height: 100%;
+}
+
+.servicos img{
+	padding: 15px 0px;
+}
+
+.container-fluid .container .row .col-sm-6>h2{	
+	font-weight: 700;
+	letter-spacing: -0.04em;
+	font-size: 50px;
+}
+
+.container-fluid .container .row .col-sm-6>h3{	
+	font-weight: 700;
+	letter-spacing: -0.04em;
+	font-size: 35px;
+}
+
+.servicos h2, .servicos h3{
+	color: #7c25f8;
+}
+
+.img1{
+	background: url('./imagens/img1.jpg');
+}
+
+/*RECURSOS*/
+.recursos{
+	padding: 20px 0;
+	color: white;
+}
+.recursos h2{
+	color: white;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+	font-size: 50px;
+}
+.recursos h3{
+	color: #9bf0e1;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+	font-size: 35px;
+}
+
+.rotacao{
+	transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	margin-left: 50px;
+}
+
+.capa .descricao>h1{	
+	color: white;
+	font-size: 8.25em;
+	font-weight: 900;
+	letter-spacing:-9px;	
+	margin-bottom: 50px;
+}
+
